@@ -77,6 +77,7 @@ people_3 = np.array([4, 7])
 people = (people_1 , people_2 , people_3)
 outputs = knn.predict(people)
 
+
 for output in outputs:
     if  output == 0:
         print("Female♀️")
