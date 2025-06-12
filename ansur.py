@@ -81,11 +81,12 @@ for output in outputs:
     else:
         print("male♂️")
         
-knn.evaluate(X_test , Y_test)
+accuracy = knn.evaluate(X_test , Y_test)
+print("accuracy: ",accuracy)
 
 Y_pred_simple = knn.predict(X_test)
 Y_pred = [int(x) for x in Y_pred_simple]
-print("Y_pred:", Y_pred)
+#print("Y_pred:", Y_pred)
 
 confusion_matrix = np.zeros((2,2))
 
@@ -111,4 +112,5 @@ knn = KNeighborsClassifier(n_neighbors=5)
 knn.fit(X_train,Y_train)
 knn.predict(people)
 
-knn.score(X_test,Y_test)
+accuracy1 = knn.score(X_test,Y_test)
+print("accuracy: ",accuracy1)
