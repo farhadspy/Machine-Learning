@@ -21,3 +21,4 @@ if __name__ == "__main__":
     knn_sklearn. fit(X_train,Y_train)
     accuracy = knn_sklearn.score(X_test,Y_test)
     print("accuracy: ", accuracy)
+    
