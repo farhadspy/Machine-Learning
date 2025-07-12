@@ -20,6 +20,6 @@ class LLS:
         Y_pred = X_test @ self.w
         return Y_pred
     
-    def eval
+    def evall
     
     
