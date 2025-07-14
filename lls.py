@@ -12,14 +12,13 @@ class LLS:
         self.w = None
     
     def fit(self, X_train, Y_train):
-        #self.w = np.matmul(np.matmul(np.linalg.inv(np.matmul(X_train.T, X_train)), X_train.T), Y_train)
         self.w = inv(X_train.T @ X_train) @ X_train.T @ Y_train
-        return self.w
         
     def predict(self, X_test):
         Y_pred = X_test @ self.w
         return Y_pred
     
-    def evall
+    def evaluate(self, X_test, Y_test):
+        pass
     
     
