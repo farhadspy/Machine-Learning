@@ -79,4 +79,4 @@ for j in range(epochs):
         
         ax2.clear()
         ax2.plot(losses, color='green')
-        plt.pause(0.1)
+        plt.pause(0.01)
